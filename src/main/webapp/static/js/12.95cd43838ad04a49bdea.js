@@ -1,0 +1,2 @@
+webpackJsonp([12],{xto5:function(t,e){},z3nk:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("h1",[this._v("404~~~你所访问的页面不存在")])])}]};var i=n("C7Lr")({name:"404",data:function(){return{}},methods:{},components:{},mounted:function(){}},r,!1,function(t){n("xto5")},"data-v-539074d4",null);e.default=i.exports}});
+//# sourceMappingURL=12.95cd43838ad04a49bdea.js.map

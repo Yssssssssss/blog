@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+		<!-- 阻止生成注释 -->
+		<commentGenerator>
+			<property name="suppressDate" value="false" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<!-- 配置数据库连接 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/blog" password="qweasd"
+			userId="root"></jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!-- 指定javabean生成的位置 -->
+		<javaModelGenerator targetPackage="pojo"
+			targetProject=".\src\main\java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!--指定mapper生成的位置 -->
+		<sqlMapGenerator targetPackage="mapper"
+			targetProject=".\src\main\resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<!-- 接口生成的位置 -->
+		<javaClientGenerator targetPackage="dao"
+			targetProject=".\src\main\java" type="XMLMAPPER">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		<!-- 指定每个表的生成测略 -->
+		<table tableName="user" domainObjectName="User"></table>
+		<table tableName="focus" domainObjectName="Focus"></table>
+		<table tableName="text" domainObjectName="Text"></table>
+		<table tableName="collect" domainObjectName="Collect"></table>
+		<table tableName="comment" domainObjectName="Comment"></table> 
+		<table tableName="likes" domainObjectName="Likes"></table>
+	</context>
+</generatorConfiguration>
