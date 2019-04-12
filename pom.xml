@@ -44,12 +44,12 @@
 			<version>2.0.0</version>
 		</dependency>
 		<!-- c3p0数据库连接池 -->
-		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 
 		<dependency>
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.5.2</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- mysql驱动包 -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
